@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="number|numberDecimal|numberSigned"
         android:text=""
         android:textColorHighlight="#009688"
         android:textColorLink="@color/teal_200"
