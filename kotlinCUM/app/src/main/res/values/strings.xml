@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App para calcular CUM </string>
+    <string name="Nota">Nota</string>
+    <string name="UV">Unidades Valorativas</string>
+    <string name="Agregar">Agregar</string>
+    <string name="Calcular">Calcular</string>
+</resources>
