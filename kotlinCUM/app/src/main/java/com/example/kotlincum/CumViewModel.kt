@@ -6,27 +6,27 @@ class CumViewModel : ViewModel() {
     var notas: MutableList<Double> = mutableListOf()
     var uvs: MutableList<Int> = mutableListOf()
 
-    fun addnota(nota: Double) {
+    fun agregarnota(nota: Double) {
         notas.add(nota)
     }
 
-    fun adduv(uv: Int) {
+    fun agregaruv(uv: Int) {
         uvs.add(uv)
     }
 
     fun calcularCum(): Double {
         var totaluvs = 0
-        var weightedSum = 0.0
+        var SumaTotal = 0.0
 
         for (i in 0 until notas.size) {
             totaluvs += uvs[i]
-            weightedSum += notas[i] * uvs[i]
+            SumaTotal += notas[i] * uvs[i]
         }
 
         return if (totaluvs == 0) {
             0.0
         } else {
-            weightedSum / totaluvs
+            SumaTotal / totaluvs
         }
     }
 }

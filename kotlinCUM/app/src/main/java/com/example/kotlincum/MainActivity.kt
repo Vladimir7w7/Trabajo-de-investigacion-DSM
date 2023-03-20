@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
@@ -27,10 +28,13 @@ class MainActivity : AppCompatActivity() {
             val uv = campouv.text.toString().toIntOrNull()
 
             if (nota != null && uv != null) {
-                cumViewModel.addnota(nota)
-                cumViewModel.adduv(uv)
+                cumViewModel.agregarnota(nota)
+                cumViewModel.agregaruv(uv)
                 camponota.text.clear()
                 campouv.text.clear()
+            }
+            else{
+                Toast.makeText(applicationContext,"Complete los campos",Toast.LENGTH_SHORT).show()
             }
         }
 
